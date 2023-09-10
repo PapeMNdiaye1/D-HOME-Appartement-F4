@@ -49,6 +49,7 @@
             <img id="Scene-9" src="./Style/Images/Scene-9.jpg">
             <img id="Scene-10" src="./Style/Images/Scene-10.jpg">
             <img id="Scene-11" src="./Style/Images/Scene-11.jpg">
+            <img id="Scene-12" src="./Style/Images/Scene-12.jpg">
 
         </a-assets>
 
@@ -294,6 +295,22 @@
                 the_dote="Name_of_dote: Dote-10 ; Group_to_activate: Group-10 ; The_rotation: 0">
             </a-plane>
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-2.98088 -0.92279 0.06524" rotation="-78.19842579504501 42.290014858606064 -22.71433883016636"
+                the_dote="Name_of_dote: Dote-12 ; Group_to_activate: Group-12 ; The_rotation: 0">
+            </a-plane>
+
+        </a-entity>
+        <!-- Group-12 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-12" visible="false">
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="2.68657 -1.49446 0.27973" rotation="-80.30691048112645 125.17924612238713 -106.60108961527018"
+                the_dote="Name_of_dote: Dote-11 ; Group_to_activate: Group-11 ; The_rotation: 0">
+            </a-plane>
+
+
+
 
         </a-entity>
 
@@ -375,6 +392,9 @@
                                 break;
                             case 'Dote-11':
                                 the_sky.setAttribute('src', '#Scene-11')
+                                break;
+                            case 'Dote-12':
+                                the_sky.setAttribute('src', '#Scene-12')
                                 break;
 
                             default:
